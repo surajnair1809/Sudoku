@@ -10,9 +10,9 @@ import java.util.Scanner;
 public class Main {
 
 	public static void main(String[] args) {
-
-		Board sudoku = new Board(9);
-		int [][] board = new int[9][9] ;
+		int N = 9 ;
+		Board sudoku = new Board(N);
+		int [][] board = new int[N][N] ;
 
 		try {
 			Scanner scanner = new Scanner(new File("input.csv"));
