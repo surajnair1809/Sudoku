@@ -9,6 +9,7 @@ public class Board {
 	private int[][] board;
 	public final Integer size ;
 	private Integer placed ;
+	public Integer cycle = 0 ;
 
 	public Board(int size) {
 		this.size = size;
@@ -17,7 +18,7 @@ public class Board {
 	}
 
 	public boolean solve(){
-
+		cycle ++ ;
 		if(isSolved()) return true ;
 
 		int [] nextBlankPos = getNextBlank();

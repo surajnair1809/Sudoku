@@ -23,6 +23,7 @@ public class Main {
 		sudoku.show();
 		sudoku.solve();
 		sudoku.show();
+		System.out.println(sudoku.cycle);
 	}
 
 
